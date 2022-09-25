@@ -9,3 +9,9 @@ repos:
     rev: 21.12b0
     hooks:
     -   id: black
+- repo: https://github.com/Checkmarx/kics
+  rev: v1.6.0
+  hooks:
+      - id: kics-scan
+        verbose: true
+        args: [--ignore-on-exit, "all"]
