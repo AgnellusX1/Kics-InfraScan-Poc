@@ -1,13 +1,12 @@
 [
   {
-    "mode": "NULLABLE", 
-    "name": "timestamp", 
+    "mode": "NULLABLE",
+    "name": "timestamp",
     "type": "TIMESTAMP"
   },
   {
-    "mode": "NULLABLE", 
-    "name": "payload", 
+    "mode": "NULLABLE",
+    "name": "payload",
     "type": "STRING"
   }
 ]
-  

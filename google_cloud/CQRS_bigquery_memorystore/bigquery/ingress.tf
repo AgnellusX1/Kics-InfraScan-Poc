@@ -31,4 +31,3 @@ resource "google_bigquery_table" "prober_ingress" {
     prevent_destroy = true
   }
 }
-

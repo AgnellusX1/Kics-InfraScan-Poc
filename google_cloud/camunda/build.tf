@@ -42,7 +42,7 @@ resource "null_resource" "camunda_cloudsql_image" {
     image = "eu.gcr.io/${local.project}/camunda_cloudsql:${local.config.base_image_tag}_${
       sha1(
         "${sha1(local_file.dockerfile.content)}${sha1(local_file.bpm-platform.content)}"
-      )  
+      )
     }"
   }
   provisioner "local-exec" {

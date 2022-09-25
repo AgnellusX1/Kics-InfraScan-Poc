@@ -14,8 +14,8 @@
         const expires_in = googleUser.getAuthResponse().expires_in;
         const id_token = googleUser.getAuthResponse().id_token;
         const access_token = googleUser.getAuthResponse(true).access_token;
-        document.cookie = "ACCESSTOKEN=" + access_token + 
-          "; path=/; samesite=strict; max-age=" + expires_in + 
+        document.cookie = "ACCESSTOKEN=" + access_token +
+          "; path=/; samesite=strict; max-age=" + expires_in +
           "; secure";
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('token')) {
@@ -41,7 +41,7 @@
       }
     </script>
   </div>
-  
+
   <div><p id="token">ACCESS_TOKEN></p></div>
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>  
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>

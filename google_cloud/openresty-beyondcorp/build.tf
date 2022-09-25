@@ -25,7 +25,7 @@ resource "null_resource" "openresty_image" {
     image = "eu.gcr.io/${local.project}/openresty:${local.base_image_tag}_${
       sha1(
         "${sha1(local_file.dockerfile.content)}${sha1(local_file.config.content)}${sha1(local_file.login.content)}${data.archive_file.swiss.output_sha}"
-      )  
+      )
     }"
   }
   provisioner "local-exec" {

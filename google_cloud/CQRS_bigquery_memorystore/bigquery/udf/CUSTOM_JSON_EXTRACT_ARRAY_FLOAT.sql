@@ -1,5 +1,5 @@
 /*
-Adapted from 
+Adapted from
 https://stackoverflow.com/questions/46742020/what-jsonpath-expressions-are-supported-in-bigquery
 */
 CREATE OR REPLACE FUNCTION

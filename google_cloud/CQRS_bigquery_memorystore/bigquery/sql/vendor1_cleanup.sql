@@ -8,7 +8,7 @@ WITH
       payload
     FROM
       `${ingress}`
-  ), 
+  ),
   extraction AS (
     SELECT *,
       JSON_EXTRACT_SCALAR(payload, '$.user') as user,

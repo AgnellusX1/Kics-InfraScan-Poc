@@ -13,6 +13,6 @@ WITH values_controls AS (
 SELECT
   user,
   day,
-  SUM(value * multiplier) as adjusted_total  
+  SUM(value * multiplier) as adjusted_total
 FROM values_controls
 GROUP BY user, day

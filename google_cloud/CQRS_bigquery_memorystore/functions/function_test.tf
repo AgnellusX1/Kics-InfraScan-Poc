@@ -6,7 +6,7 @@ resource "google_cloudfunctions_function" "test" {
   name                  = "test"
   runtime               = "nodejs10"
   /* Testing has minimal resource requirements */
-  max_instances         = 1   
+  max_instances         = 1
   available_memory_mb   = 128
   timeout               = 30
   entry_point           = "test"

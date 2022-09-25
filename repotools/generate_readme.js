@@ -21,7 +21,7 @@ class AddSection extends Transform {
       const link = directory(this.source);
       this.push(`\n# [${link}](${link})\n`);
     }
-        
+
     this.push(data);
 
     if (this.source == "_header_/README.md") {
@@ -37,8 +37,8 @@ class AddSection extends Transform {
 
           const level = (link.match(/\//g) || []).length;
           const indentation = new Array(level * 2 + 1).join(" ")
-  
-          this.push(`\n${indentation}- [${link}](${link})`); 
+
+          this.push(`\n${indentation}- [${link}](${link})`);
           glob(link + '/*.tf', (err, tffiles) => {
             let resources = [];
             tffiles.map((file) => {

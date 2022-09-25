@@ -37,4 +37,3 @@ exports.memorystoreload = (info, context) => new Promise((resolve, reject) => {
     })
     .on('error', reject);
 });
-

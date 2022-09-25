@@ -2,10 +2,10 @@
   upstream:
     url: ${camunda_url}
     preserve_host: false
-  match: 
+  match:
     url: ${oathkeeper_url}/camunda/<.*>
     methods: ["GET", "POST", "DELETE", "PUT"]
-  authorizer: 
+  authorizer:
     handler: allow
   authenticators:
       - handler: anonymous
@@ -16,10 +16,10 @@
   upstream:
     url: ${camunda_url}
     preserve_host: false
-  match: 
+  match:
     url: ${oathkeeper_url}/camunda-welcome/<.*>
     methods: ["GET", "POST", "DELETE", "PUT"]
-  authorizer: 
+  authorizer:
     handler: allow
   authenticators:
       - handler: anonymous
@@ -31,10 +31,10 @@
   upstream:
     url: ${camunda_url}
     preserve_host: false
-  match: 
+  match:
     url: ${oathkeeper_url}/camunda-invoice/<.*>
     methods: ["GET", "POST", "DELETE", "PUT"]
-  authorizer: 
+  authorizer:
     handler: allow
   authenticators:
       - handler: anonymous
@@ -49,7 +49,7 @@
   match:
     url: ${oathkeeper_url}/engine-rest/<.*>
     methods: ["GET", "POST", "DELETE", "PUT"]
-  authorizer: 
+  authorizer:
     handler: allow
   authenticators:
       - handler: jwt

@@ -16,7 +16,7 @@ function _M.isAuthentic(request, signingsecret)
     local timestamp = request.get_headers()["X-Slack-Request-Timestamp"]
     local signature = request.get_headers()["X-Slack-Signature"]
     local body = request.get_body_data()
-    if body == nil or timestamp == nil or signature == nil then 
+    if body == nil or timestamp == nil or signature == nil then
         return false
     end
 

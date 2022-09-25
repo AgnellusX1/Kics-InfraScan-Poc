@@ -18,6 +18,3 @@ Note you need to switch on the App Engine API (dependancy of Cloud Scheduler), c
 Shut down memorystore
 
     terraform destroy -target module.memorystore.google_redis_instance.cache
-
-
-

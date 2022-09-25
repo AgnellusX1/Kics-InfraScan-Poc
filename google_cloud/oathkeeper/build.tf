@@ -33,7 +33,7 @@ resource "null_resource" "oathkeeper_image" {
     image = "eu.gcr.io/${local.project}/oathkeeper:${local.base_image_tag}_${
       sha1(
         "${sha1(local_file.dockerfile.content)}${sha1(local_file.config.content)}"
-      )  
+      )
     }"
   }
   provisioner "local-exec" {

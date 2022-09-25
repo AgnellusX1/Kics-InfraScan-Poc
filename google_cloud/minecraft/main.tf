@@ -96,7 +96,7 @@ resource "google_compute_instance" "minecraft" {
   metadata = {
     enable-oslogin = "TRUE"
   }
-      
+
   boot_disk {
     auto_delete = false # Keep disk after shutdown (game data)
     source      = google_compute_disk.minecraft.self_link

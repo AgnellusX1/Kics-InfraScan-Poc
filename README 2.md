@@ -1,21 +1,21 @@
 ![Hero](_header_/hero.png)
- 
+
 # Repository containing various Terraform code
- 
+
 Lots of Terraform recipes for doing things, aimed for copy and pasting into projects.
- 
+
 - [AWS Examples](#aws-examples)
 - [Azure Examples](#azure-examples)
 - [Google Cloud Platform Examples](#google-cloud-platform-examples)
- 
+
 # Knowledge-as-code
- 
+
 Terraform is an ideal knowledge transfer tool that can communicate the minutea of using certain technology combinations. We use this at [Futurice](https://futurice.com?source=terraform-examples) to disseminate hard won learnings across projects and industries, increasing the development velocity for all of our clients.
- 
+
 # Read more about specific projects
- 
+
 A few of the recipes have associated blog posts.
- 
+
 - [Terraform Recipe for WordPress on Fargate](https://futurice.com/blog/terraform-recipe-wordpress-fargate)
 - [OpenResty: a Swiss Army Proxy for Serverless; WAL, Slack, Zapier and Auth](https://futurice.com/blog/openresty-a-swiss-army-proxy-for-serverless)
 - [Low cost Friends and Family Minecraft server](https://www.futurice.com/blog/friends-and-family-minecraft-server-terraform-recipe)
@@ -23,11 +23,11 @@ A few of the recipes have associated blog posts.
 - [Serverless Camunda Business Workflow Engine on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql)
 - [A Detailed Look at Camunda BPMN Application Development](https://futurice.com/blog/a-detailed-look-at-camunda-bpmn-application-development)
 - [Exporting Bigquery to Cloud Memorystore](https://www.futurice.com/blog/bigquery-to-memorystore)
- 
+
 # Contribution
- 
+
 External contributions welcome! All that we ask is that the recipe is interesting, and that it worked at some point. There is no expectation of maintenance (maintained projects should probably have their own repository). No two projects are alike, and so, we expect most uses of this repository to require customization.
- 
+
 To regenerate the readme, run `npm run readme`
 
 ## Directory layout
@@ -1610,7 +1610,7 @@ Terraform receipe for running Camunda BPMN workflow engine serverlessly on Cloud
 Customize the base image in the main.tf locals.
 
 Read more on the blog
-- [Provisioning Serverless Camunda on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql) 
+- [Provisioning Serverless Camunda on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql)
 - [Call external services with at-least-once delevery](https://www.futurice.com/blog/at-least-once-delivery-for-serverless-camunda-workflow-automation)
 
 
@@ -1652,7 +1652,7 @@ Terraform receipe for running Camunda BPMN workflow engine serverlessly on Cloud
 Customize the base image in the main.tf locals.
 
 Read more on the blog
-- [Provisioning Serverless Camunda on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql) 
+- [Provisioning Serverless Camunda on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql)
 - [Call external services with at-least-once delevery](https://www.futurice.com/blog/at-least-once-delivery-for-serverless-camunda-workflow-automation)
 
 
@@ -1722,7 +1722,7 @@ We are experimenting with providing support through a [google doc](https://docs.
 
 Help us make this simple for others to use by asking for help.
 
-Launch blog can be found [here](https://www.futurice.com/blog/friends-and-family-minecraft-server-terraform-recipe) 
+Launch blog can be found [here](https://www.futurice.com/blog/friends-and-family-minecraft-server-terraform-recipe)
 
 Features
 - Runs [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server/) Docker image
@@ -1747,7 +1747,7 @@ and add it to an upstream header, required to make an authenticated call to a pr
 # [google_cloud/openresty-beyondcorp](google_cloud/openresty-beyondcorp)
 # Swiss Army Identity Aware Proxy
 
-Very fast Serverless OpenResty based proxy that can wrap upstream binaries with a login. Furthermore, we have examples of 
+Very fast Serverless OpenResty based proxy that can wrap upstream binaries with a login. Furthermore, we have examples of
 - Local development environment
 - Slack/Zapier intergration.
 - A Write Ahead Log
@@ -1763,7 +1763,7 @@ Build on top of OpenResty, hosted on Cloud Run (and excellent match)
 
 ## Extensions Fast Response using a Write Ahead Log
 
-If upstream is slow (e.g. scaling up), you can redirect to a WAL. Latency is the time to store the message. 
+If upstream is slow (e.g. scaling up), you can redirect to a WAL. Latency is the time to store the message.
 A different location plays back the WAL with retries so you can be sure the request is eventially handled.
 
 ## Extensions Securing a Slack Intergration
@@ -1806,5 +1806,3 @@ killall "bash"
 # Test slack
 
     curl http://localhost:8080/slack/command
-
-

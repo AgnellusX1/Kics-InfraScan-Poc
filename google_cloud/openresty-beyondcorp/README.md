@@ -1,6 +1,6 @@
 # Swiss Army Identity Aware Proxy
 
-Very fast Serverless OpenResty based proxy that can wrap upstream binaries with a login. Furthermore, we have examples of 
+Very fast Serverless OpenResty based proxy that can wrap upstream binaries with a login. Furthermore, we have examples of
 - Local development environment
 - Slack/Zapier intergration.
 - A Write Ahead Log
@@ -16,7 +16,7 @@ Build on top of OpenResty, hosted on Cloud Run (and excellent match)
 
 ## Extensions Fast Response using a Write Ahead Log
 
-If upstream is slow (e.g. scaling up), you can redirect to a WAL. Latency is the time to store the message. 
+If upstream is slow (e.g. scaling up), you can redirect to a WAL. Latency is the time to store the message.
 A different location plays back the WAL with retries so you can be sure the request is eventially handled.
 
 ## Extensions Securing a Slack Intergration

@@ -13,7 +13,7 @@ exports.probe = async (event, ctx) => {
     const payload = event.data ? JSON.parse(Buffer.from(event.data, 'base64'))
                                : event.query; // If running as http
 
-    // Unique user for each deployment version                        
+    // Unique user for each deployment version
     const user = `probe_${payload.version}`;
     const timestamp = new Date().toISOString();
     const work = []

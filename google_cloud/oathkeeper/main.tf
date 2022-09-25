@@ -82,7 +82,7 @@ resource "google_cloud_run_service" "oathkeeper" {
       containers {
         image = null_resource.oathkeeper_image.triggers.image
         args = ["--config", "/config.yaml"]
-        env { 
+        env {
           name  = "nonce"
           value = filesha256("${path.module}/rules.template.yml") # Force refresh on rule change
         }

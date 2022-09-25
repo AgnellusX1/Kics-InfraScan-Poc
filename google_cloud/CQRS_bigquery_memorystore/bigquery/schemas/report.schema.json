@@ -1,22 +1,22 @@
 [
   {
-    "mode": "NULLABLE", 
-    "name": "user", 
+    "mode": "NULLABLE",
+    "name": "user",
     "type": "STRING"
-  }, 
+  },
   {
-    "mode": "NULLABLE", 
-    "name": "day", 
+    "mode": "NULLABLE",
+    "name": "day",
     "type": "DATE"
   },
   {
-    "mode": "NULLABLE", 
-    "name": "adjusted_total", 
+    "mode": "NULLABLE",
+    "name": "adjusted_total",
     "type": "FLOAT"
   },
   {
-    "mode": "NULLABLE", 
-    "name": "KEY", 
+    "mode": "NULLABLE",
+    "name": "KEY",
     "type": "STRING"
   }
 ]

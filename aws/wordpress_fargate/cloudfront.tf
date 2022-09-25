@@ -139,6 +139,3 @@ resource "aws_cloudfront_distribution" "this" {
     aws_ecs_service.this
   ]
 }
-
-
-

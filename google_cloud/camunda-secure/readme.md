@@ -5,7 +5,7 @@ Terraform receipe for running Camunda BPMN workflow engine serverlessly on Cloud
 Customize the base image in the main.tf locals.
 
 Read more on the blog
-- [Provisioning Serverless Camunda on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql) 
+- [Provisioning Serverless Camunda on Cloud Run](https://www.futurice.com/blog/serverless-camunda-terraform-recipe-using-cloud-run-and-cloud-sql)
 - [Call external services with at-least-once delevery](https://www.futurice.com/blog/at-least-once-delivery-for-serverless-camunda-workflow-automation)
 
 

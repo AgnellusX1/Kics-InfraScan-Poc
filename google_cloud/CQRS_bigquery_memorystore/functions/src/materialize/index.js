@@ -23,7 +23,7 @@ exports.materialize = async (event, ctx) => {
         const query = `
             CREATE OR REPLACE TABLE
             \`${process.env.PROJECT}.${process.env.DATASET}.${process.env.TABLE}\`
-            AS SELECT * FROM 
+            AS SELECT * FROM
             \`${process.env.PROJECT}.${process.env.SOURCE_DATASET}.${process.env.SOURCE_TABLE}\``;
         console.log(`Executing: ${query}`)
         const [job] = await bigquery.createQueryJob({
@@ -32,7 +32,7 @@ exports.materialize = async (event, ctx) => {
         });
         await job.getQueryResults();
     }
-    
+
     if (process.env.BUCKET && process.env.FILE) {
         console.log(`Exporting to ${process.env.BUCKET} ${process.env.FILE}`);
         const destfile = gcs

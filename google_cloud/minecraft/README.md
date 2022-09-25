@@ -6,7 +6,7 @@ We are experimenting with providing support through a [google doc](https://docs.
 
 Help us make this simple for others to use by asking for help.
 
-Launch blog can be found [here](https://www.futurice.com/blog/friends-and-family-minecraft-server-terraform-recipe) 
+Launch blog can be found [here](https://www.futurice.com/blog/friends-and-family-minecraft-server-terraform-recipe)
 
 Features
 - Runs [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server/) Docker image
@@ -18,4 +18,3 @@ Features
   - Reserved IP address costs: $1.46 per month
   - Reserved 10Gb disk costs: $0.40
   - VM cost: $0.01 per hour, max session cost $0.24
-

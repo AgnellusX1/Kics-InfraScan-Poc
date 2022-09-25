@@ -13,11 +13,10 @@ WITH
   withKeyPrefix AS (
     SELECT
       *, CONCAT('${PREFIX}', user) AS KEY
-    FROM 
+    FROM
       historical_window
   )
 SELECT
   *
 FROM
   withKeyPrefix
-

@@ -161,11 +161,11 @@ resource "aws_ecs_task_definition" "this" {
   {
     "secrets": [
       {
-        "name": "WORDPRESS_DB_USER", 
+        "name": "WORDPRESS_DB_USER",
         "valueFROM": "${aws_ssm_parameter.db_master_user.arn}"
       },
       {
-        "name": "WORDPRESS_DB_PASSWORD", 
+        "name": "WORDPRESS_DB_PASSWORD",
         "valueFROM": "${aws_ssm_parameter.db_master_password.arn}"
       }
     ],
@@ -180,7 +180,7 @@ resource "aws_ecs_task_definition" "this" {
       }
     ],
     "essential": true,
-    "image": "wordpress",        
+    "image": "wordpress",
     "name": "wordpress",
     "portMappings": [
       {
