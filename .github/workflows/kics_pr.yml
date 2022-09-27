@@ -11,7 +11,7 @@ jobs:
     - name: run kics Scan
       uses: checkmarx/kics-github-action@v1.5
       with:
-        path: test/samples/positive1.tf,test/samples/positive2.tf
+        path: .
         token: ${{ secrets.GITHUB_TOKEN }}
         output_path: myResults/
         ignore_on_exit: results
