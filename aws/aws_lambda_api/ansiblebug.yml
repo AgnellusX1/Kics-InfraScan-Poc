@@ -1,0 +1,24 @@
+---
+nginx_worker_processes: 12
+
+firewall_allowed_rules:
+  - { "proto" : "tcp" , "ports" : "80" , "cidr_ip" : "0.0.0.0/0" , rule_desc: "HTTP from Public" }
+  - { "proto" : "tcp" , "ports" : "443" , "cidr_ip" : "0.0.0.0/0" , rule_desc: "HTTPS from Public" }
+  - { "proto" : "tcp" , "ports" : "6379" , "cidr_ip" : "0.0.0.0/0" , rule_desc: "Accept Redis Connection" }
+
+#firewall vars
+firewall_state: started
+firewall_enabled_at_boot: true
+firewall_allow_ssh_ips: true
+
+firewall_allow_icmp: true
+firewall_additional_rules: []
+firewall_ip6_additional_rules: []
+firewall_log_dropped_packets: false
+
+chitragupta_config_team: "freetools"
+chitragupta_config_application: "launchdarkly"
+
+chitragupta_config_logs:
+  vanilla_processes:
+    - "/ebs/logs/app.log"
