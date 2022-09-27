@@ -5,13 +5,31 @@ repos:
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
--   repo: https://github.com/psf/black
-    rev: 21.12b0
-    hooks:
-    -   id: black
-- repo: https://github.com/Checkmarx/kics
-  rev: v1.6.0
-  hooks:
-      - id: kics-scan
-        verbose: true
-        args: [--ignore-on-exit, "all"]
+# - repo: https://github.com/Checkmarx/kics
+#   rev: v1.6.0
+#   hooks:
+#       - id: kics-scan
+#         verbose: true
+#         args:
+#         - --path=aws/aws_lambda_api/route53.tf
+#         - --disable-secrets
+#         - --exclude-severities=info
+#         - --exclude-severities=low
+#         - --exclude-severities=medium
+#         - --exclude-categories=Encryption
+#         - --exclude-categories=Best Practices
+#         - --exclude-categories=Availability
+#         - --exclude-categories=Access Control
+#         - --exclude-categories=Build Process
+#         - --exclude-categories=Backup
+#         - --exclude-categories=Insecure Configurations
+#         - --exclude-categories=Insecure Defaults
+#         - --exclude-categories=Observability
+#         - --exclude-categories=Resource Management
+#         - --exclude-categories=Secret Management
+#         - --exclude-categories=Structure and Semantics
+#         - --exclude-categories=Supply-Chain
+
+
+# --exclude-categories=Encryption,Best Practices,Availability,Access Control,Best Practices,Build Process,Backup,Insecure Configurations,Insecure Defaults,Observability,Resource Management,Secret Management,Structure and Semantics,Supply-Chain]
+# - --args=--var-file=dev.tfvars
